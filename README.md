@@ -11,10 +11,6 @@ The Log Monitoring Service provides a REST API to retrieve log entries from UNIX
 # Design
 ## Structure
 
-- Controller: Handles HTTP requests and responses. Uses the LogService to fetch log data.
-- Service: Contains the business logic to read log files, filter lines, and handle errors.
-- Model: Represents the response structure for the API.
-
 ```
 log-monitoring
 ├── src
