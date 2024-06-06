@@ -8,8 +8,8 @@ The Log Monitoring Service provides a REST API to retrieve log entries from UNIX
 - mvn 
 - java 8
 
-#Design
-##Structure
+# Design
+## Structure
 
 - Controller: Handles HTTP requests and responses. Uses the LogService to fetch log data.
 - Service: Contains the business logic to read log files, filter lines, and handle errors.
@@ -41,7 +41,7 @@ log-monitoring
 │                           
 └── README.md
 ```
-#Explanation
+# Explanation
 1. Controller:
    - Uses ResponseBodyEmitter to stream log entries as soon as the service received it. The idea is to use HTTP Chunked Transfer encoding.
    - URL-decodes the filename to ensure it's correctly formatted.
